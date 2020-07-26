@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Estágio Desenvolvimento Front-end | Inovyo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+        <!-- Caso queira customizar algum estilo, insira o seu código no arquivo styles.css -->
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!-- Insira o seu código aqui embaixo. Boa sorte! -->
+        <nav class="navbar navbar-light bg-dark">
+            <a href="navbar-brand" href="#">Dashboard FIPE</a>
+        </nav>
+
+        <form action="app.js" method="GET"></form>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block bg-light sidebar collapse">
+
+                        <div class="sidebar-sticky pt-5">
+                            <div class="nav flex-column form-group">
+                                <label for="marca">Marca</label>
+                                    <select class="form-control">
+                                        <option value="marca">Selecione uma marca</option>
+                                    </select>
+                            </div>
+
+                            <div class="nav flex-column form-group">
+                                <label for="modelo">Modelo</label>
+                                    <select class="form-control">
+                                        <option value="modelo">Selecione um modelo</option>
+                                    </select>
+                            </div>
+
+                            <div class="nav flex-column form-group">
+                                <label for="valor">Valor do Carro 0 KM</label>
+                                    <select class="form-control">
+                                        <option value="valor"><b>R$</b></option>
+                                    </select>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </form>
+        
+        <main role="main" class="col-md-9 ml-sm-auto col-lg px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            </div>
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">            
+                <div class="btn-group mr-2">
+                    <button type="butoon" class="btn btn-sm btn-outline-secondary">Share</button>
+                    <button type="butoon" class="btn btn-sm btn-outline-secondary">Export</button>
+                </div>  
+            </div>  
+
+            <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+            
+        </main>
+        
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        <!-- Insira o seu código javascript no arquivo app.js (os endpoints da API estão listados no arquivo) -->
+        <script src="./app.js"></script>
+    </body>
+</html>
